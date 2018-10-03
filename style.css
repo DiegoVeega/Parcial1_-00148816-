@@ -14,17 +14,26 @@ body {
     box-sizing: border-box;
 }
 
+.logo {
+    height: 2em;
+}
+
 nav {
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     background-color: #000000;
 }
 
-img {
-    height: 20px;
+nav ul {
+    list-style: none;
 }
 
 nav ul li {
-    display: inline;
-    list-style: none;
+    display: inline-block;
+    justify-content: center;
+    text-transform: uppercase;
 }
 
 nav ul li a {
@@ -46,12 +55,21 @@ nav ul li a {
 }
 
 .portada h1 {
-    font-family: 'Raleway', sans-serif
+    font-family: 'Raleway', sans-serif;
+    font-size: 100px;
+}
+.portada h4 {
+    font-family: 'Monoton', cursive;
+}
+
+.down{
+    margin: 2em;
 }
 
 /*CONTENEDORES*/
 .contenido {
     display: grid;
+    grid-column-gap: 0.5em;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 1em;
 }
@@ -70,43 +88,52 @@ nav ul li a {
     text-decoration: none;
     background-color: orange;
     color: #ffffff;
-    margin: 2em;
+    padding: 0.5em;
+    width: 100%;
 }
+
+
 
 .img1 {
     background-image: url(img/feauture1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 10em;
 }
 
 .img2 {
-    background-image: url(img/feauture1.jpg);
+    background-image: url(img/feauture2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 10em;
 }
 
 .img3 {
-    background-image: url(img/feauture1.jpg);
+    background-image: url(img/feauture3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 10em;
 }
 
 .img4 {
-    background-image: url(img/feauture1.jpg);
+    background-image: url(img/feauture4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 10em;
 }
 
 .img5 {
-    background-image: url(img/feauture1.jpg);
+    background-image: url(img/feauture5.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 10em;
 }
 
 .img6 {
-    background-image: url(img/feauture1.jpg);
+    background-image: url(img/feauture6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 10em;
 }
 /*FOOTER*/
 footer {
@@ -161,4 +188,8 @@ footer {
     display: grid;
     grid-template-columns: 100%;
     align-content: center;
+}
+
+@media only screen and (max-width: 1100px){
+    
 }
